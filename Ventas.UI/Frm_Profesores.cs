@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ventas.UI
 {
-    public partial class Profesores : Form
+    public partial class Frm_Profesores : Form
     {
-        public Profesores()
+        public Frm_Profesores()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Ventas.UI
 {
-    partial class Profesores
+    partial class Frm_Profesores
     {
         /// <summary>
         /// Required designer variable.
