@@ -17,7 +17,7 @@ namespace Academico.Presentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Estudiantes());
+            Application.Run(new Frm_HoraDocente());
         }
     }
 }

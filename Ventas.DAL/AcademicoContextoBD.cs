@@ -17,6 +17,7 @@ namespace Academico.Datos
         }
 
         public DbSet<Estudiante> estudiante { get; set; }
+        public DbSet<Docente> docente { get; set; }
         
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
