@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Ventas.Entities
+namespace Academico.Entities
 {
     public class Estudiante
     {

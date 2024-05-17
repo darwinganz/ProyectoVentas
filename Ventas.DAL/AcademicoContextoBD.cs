@@ -5,13 +5,13 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Ventas.Entities;
+using Academico.Entities;
 
-namespace Ventas.DAL
+namespace Academico.Datos
 {
-    public class VentasContextoBD : DbContext
+    public class AcademicoContextoBD : DbContext
     {
-        public VentasContextoBD() 
+        public AcademicoContextoBD() 
             : base("name=Cadena3")
         {
         }

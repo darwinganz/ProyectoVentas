@@ -66,28 +66,19 @@
     <Compile Include="Frm_Estudiante.Designer.cs">
       <DependentUpon>Frm_Estudiante.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Principal.cs">
+    <Compile Include="Frm_Estudiantes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Principal.Designer.cs">
-      <DependentUpon>Frm_Principal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frm_Profesores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_Profesores.Designer.cs">
-      <DependentUpon>Frm_Profesores.cs</DependentUpon>
+    <Compile Include="Frm_Estudiantes.Designer.cs">
+      <DependentUpon>Frm_Estudiantes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Frm_Estudiante.resx">
       <DependentUpon>Frm_Estudiante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Principal.resx">
-      <DependentUpon>Frm_Principal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Profesores.resx">
-      <DependentUpon>Frm_Profesores.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_Estudiantes.resx">
+      <DependentUpon>Frm_Estudiantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

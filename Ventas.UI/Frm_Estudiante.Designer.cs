@@ -1,6 +1,6 @@
-﻿using Ventas.BLL;
+﻿using Academico.Negocio;
 
-namespace Ventas.UI
+namespace Academico.Presentacion
 {
     partial class Frm_Estudiante
     {
@@ -55,7 +55,7 @@ namespace Ventas.UI
             // txtBuscar
             // 
             this.txtBuscar.Location = new System.Drawing.Point(51, 51);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(228, 20);
             this.txtBuscar.TabIndex = 15;
@@ -77,7 +77,7 @@ namespace Ventas.UI
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-1, -1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(416, 39);
             this.panel1.TabIndex = 20;
@@ -133,6 +133,7 @@ namespace Ventas.UI
             this.dataCategoria.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataCategoria.Size = new System.Drawing.Size(332, 317);
             this.dataCategoria.TabIndex = 27;
+            this.dataCategoria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataCategoria_CellContentClick);
             // 
             // Panel_Agregar
             // 
@@ -147,9 +148,9 @@ namespace Ventas.UI
             this.Panel_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Panel_Agregar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Panel_Agregar.Location = new System.Drawing.Point(9, 80);
-            this.Panel_Agregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Panel_Agregar.Margin = new System.Windows.Forms.Padding(2);
             this.Panel_Agregar.Name = "Panel_Agregar";
-            this.Panel_Agregar.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Panel_Agregar.Padding = new System.Windows.Forms.Padding(2);
             this.Panel_Agregar.Size = new System.Drawing.Size(332, 259);
             this.Panel_Agregar.TabIndex = 28;
             this.Panel_Agregar.TabStop = false;
@@ -158,7 +159,7 @@ namespace Ventas.UI
             // btn_Guardar
             // 
             this.btn_Guardar.Location = new System.Drawing.Point(147, 142);
-            this.btn_Guardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Guardar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(80, 27);
             this.btn_Guardar.TabIndex = 26;
@@ -169,7 +170,7 @@ namespace Ventas.UI
             // btn_Cancelar
             // 
             this.btn_Cancelar.Location = new System.Drawing.Point(38, 142);
-            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(80, 27);
             this.btn_Cancelar.TabIndex = 25;
@@ -182,7 +183,7 @@ namespace Ventas.UI
             this.checkBox1.AutoSize = true;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.Location = new System.Drawing.Point(32, 67);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(62, 17);
             this.checkBox1.TabIndex = 24;
@@ -193,7 +194,7 @@ namespace Ventas.UI
             // 
             this.txtId.Enabled = false;
             this.txtId.Location = new System.Drawing.Point(76, 15);
-            this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(76, 20);
             this.txtId.TabIndex = 23;
@@ -211,7 +212,7 @@ namespace Ventas.UI
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(77, 41);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(174, 20);
             this.txtNombre.TabIndex = 21;
@@ -293,7 +294,7 @@ namespace Ventas.UI
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_Estudiante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -311,7 +312,7 @@ namespace Ventas.UI
         #endregion
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label4;
-        
+
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Actualizar;

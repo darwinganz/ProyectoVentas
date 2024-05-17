@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Ventas.BLL;
-using Ventas.Entities;
+using Academico.Negocio;
+using Academico.Entities;
 
-namespace Ventas.UI
+namespace Academico.Presentacion
+
 {
     public partial class Frm_Estudiante : Form
     {
@@ -27,7 +28,7 @@ namespace Ventas.UI
 
         private void Frm_Categoria_Load(object sender, EventArgs e)
         {
-            dataCategoria.DataSource = bll.Listarestudiante();
+            dataCategoria.DataSource = bll.ListarEstudiante();
             this.dataCategoria.Columns[0].Width = 45;
             this.dataCategoria.Columns[1].Width = 80;
             this.dataCategoria.Columns[2].Width = 80;
@@ -42,7 +43,7 @@ namespace Ventas.UI
             }
             else
             {
-                dataCategoria.DataSource = bll.FiltroNombre(txtBuscar.Text);
+                dataCategoria.DataSource = bll.ListarEstudiantesxNombre(txtBuscar.Text); 
             }
         }
 
@@ -135,6 +136,11 @@ namespace Ventas.UI
         private void button1_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void dataCategoria_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

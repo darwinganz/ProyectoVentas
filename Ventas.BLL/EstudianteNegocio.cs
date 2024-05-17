@@ -4,50 +4,35 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Ventas.BLL.Interfaces;
-using Ventas.DAL;
-using Ventas.Entities;
+using Academico.Negocio.Interfaces;
+using Academico.Datos;
+using Academico.Entities;
 
-namespace Ventas.BLL
+namespace Academico.Negocio
 {
     public class EstudianteNegocio : IEstudianteRepositorio
     {
-        VentasContextoBD db = new VentasContextoBD();
-
-        public List<Estudiante> Listarestudiante()
+        public void Actualizar(Academico.Entities.Estudiante estudiante)
         {
-            return db.estudiante.ToList();
+            throw new NotImplementedException();
         }
 
-        public void Actualizar(Estudiante estudiante)
+        public void Agregar(Academico.Entities.Estudiante estudiante)
         {
-            db.Entry(estudiante).State = EntityState.Modified;
-            db.SaveChanges();
+            throw new NotImplementedException();
         }
 
-        public void Agregar(Estudiante estudiante)
+        public Academico.Entities.Estudiante Buscar(int id)
         {
-            db.estudiante.Add(estudiante);
-            db.SaveChanges();
+            throw new NotImplementedException();
         }
 
-       
-       
-        public Estudiante Buscar(int Idestudiante)
+        public List<Academico.Entities.Estudiante> ListarEstudiante()
         {
-            var Bus = db.estudiante.Find(Idestudiante);
-            return Bus;
+            throw new NotImplementedException();
         }
 
-        public List<Estudiante> FiltroNombre(string nombre)
-        {
-            var query = from x in db.estudiante
-                        where x.Nombres.Contains(nombre)
-                        select x;
-            return query.ToList();
-        }
-
-        public List<Estudiante> ListarEstudiante()
+        public List<Academico.Entities.Estudiante> ListarEstudiantesxNombre(string nombre)
         {
             throw new NotImplementedException();
         }

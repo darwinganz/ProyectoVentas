@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Ventas.UI
 {
-    public partial class Frm_Profesores : Form
+    public partial class Frm_Estudiantes : Form
     {
-        public Frm_Profesores()
+        public Frm_Estudiantes()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

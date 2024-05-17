@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Ventas.BLL;
+using Academico.Negocio;
 
-namespace Ventas.UI
+namespace Academico.Presentacion
 {
     static class Program
     {
@@ -17,7 +17,7 @@ namespace Ventas.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Principal());
+            Application.Run(new Frm_Estudiante());
         }
     }
 }
