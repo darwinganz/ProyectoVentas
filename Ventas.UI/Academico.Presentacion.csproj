@@ -114,13 +114,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ventas.BLL\Ventas.BLL.csproj">
+    <ProjectReference Include="..\Ventas.BLL\Academico.Negocio.csproj">
       <Project>{3a44ce36-8e8a-4d79-a9c3-b4e02dd7a02a}</Project>
-      <Name>Ventas.BLL</Name>
+      <Name>Academico.Negocio</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ventas.Entities\Ventas.Entities.csproj">
+    <ProjectReference Include="..\Ventas.Entities\Academico.Entities.csproj">
       <Project>{0881c155-eba4-4320-bd6d-b8c2af031484}</Project>
-      <Name>Ventas.Entities</Name>
+      <Name>Academico.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

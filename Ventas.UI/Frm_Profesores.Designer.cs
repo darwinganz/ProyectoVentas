@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // Profesores
+            // Frm_Profesores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 278);
-            this.Name = "Profesores";
+            this.ClientSize = new System.Drawing.Size(707, 468);
+            this.Name = "Frm_Profesores";
             this.Text = "Profesores";
             this.ResumeLayout(false);
 

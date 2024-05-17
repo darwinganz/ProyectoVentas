@@ -10,7 +10,7 @@ using Ventas.Entities;
 
 namespace Ventas.BLL
 {
-    public class EstudianteBLL : IEstudianteRepositorio
+    public class EstudianteNegocio : IEstudianteRepositorio
     {
         VentasContextoBD db = new VentasContextoBD();
 

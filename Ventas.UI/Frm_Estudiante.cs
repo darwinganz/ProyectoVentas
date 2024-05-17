@@ -19,7 +19,7 @@ namespace Ventas.UI
             InitializeComponent();
         }
 
-        EstudianteBLL bll = new EstudianteBLL();
+        EstudianteNegocio bll = new EstudianteNegocio();
         Estudiante objCat = new Estudiante();
 
 
