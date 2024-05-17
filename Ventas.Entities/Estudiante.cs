@@ -12,7 +12,6 @@ namespace Academico.Entities
         [Key]
         public string Num_doc { get; set; }
         public string Nombres { get; set; }
-        public string Codigo { get; set; }
         public string Email { get; set; }
         public bool Estado { get; set; }
         

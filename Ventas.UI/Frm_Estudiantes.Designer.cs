@@ -1,4 +1,4 @@
-﻿namespace Ventas.UI
+﻿namespace Academico.Presentacion
 {
     partial class Frm_Estudiantes
     {
@@ -28,65 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnListar = new System.Windows.Forms.Button();
+            this.dataEstudiantes = new System.Windows.Forms.DataGridView();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtNombres = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtNum_doc = new System.Windows.Forms.TextBox();
+            this.chkEstado = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataEstudiantes)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnListar
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(337, 17);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "LISTAR";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnListar.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnListar.Location = new System.Drawing.Point(337, 17);
+            this.btnListar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(88, 23);
+            this.btnListar.TabIndex = 0;
+            this.btnListar.Text = "LISTAR";
+            this.btnListar.UseVisualStyleBackColor = false;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
-            // dataGridView1
+            // dataEstudiantes
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 59);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(467, 192);
-            this.dataGridView1.TabIndex = 1;
+            this.dataEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataEstudiantes.Location = new System.Drawing.Point(17, 59);
+            this.dataEstudiantes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dataEstudiantes.Name = "dataEstudiantes";
+            this.dataEstudiantes.Size = new System.Drawing.Size(467, 192);
+            this.dataEstudiantes.TabIndex = 1;
+            this.dataEstudiantes.DoubleClick += new System.EventHandler(this.dataEstudiantes_DoubleClick);
             // 
-            // label1
+            // txtBuscar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(13, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "NOMBRE";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(93, 17);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtBuscar.Location = new System.Drawing.Point(93, 17);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(191, 20);
+            this.txtBuscar.TabIndex = 3;
             // 
             // label2
             // 
@@ -136,28 +125,30 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "EMAIL";
             // 
-            // button2
+            // btnNuevo
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button2.Location = new System.Drawing.Point(399, 317);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(71, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Nuevo";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnNuevo.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnNuevo.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnNuevo.Location = new System.Drawing.Point(399, 317);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(71, 23);
+            this.btnNuevo.TabIndex = 8;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // button3
+            // btnActualizar
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(399, 362);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(71, 23);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Actualizar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnActualizar.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnActualizar.Location = new System.Drawing.Point(399, 362);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(71, 23);
+            this.btnActualizar.TabIndex = 9;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // label6
             // 
@@ -171,74 +162,86 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "ESTADO";
             // 
-            // textBox2
+            // txtNombres
             // 
-            this.textBox2.Location = new System.Drawing.Point(144, 302);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 20);
-            this.textBox2.TabIndex = 11;
+            this.txtNombres.Location = new System.Drawing.Point(144, 302);
+            this.txtNombres.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtNombres.Name = "txtNombres";
+            this.txtNombres.Size = new System.Drawing.Size(191, 20);
+            this.txtNombres.TabIndex = 11;
             // 
-            // textBox3
+            // txtEmail
             // 
-            this.textBox3.Location = new System.Drawing.Point(144, 365);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 20);
-            this.textBox3.TabIndex = 12;
+            this.txtEmail.Location = new System.Drawing.Point(144, 365);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(191, 20);
+            this.txtEmail.TabIndex = 12;
             // 
-            // textBox4
+            // txtId
             // 
-            this.textBox4.Location = new System.Drawing.Point(18, 302);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(98, 20);
-            this.textBox4.TabIndex = 13;
+            this.txtId.Location = new System.Drawing.Point(18, 302);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(98, 20);
+            this.txtId.TabIndex = 13;
             // 
-            // textBox5
+            // txtNum_doc
             // 
-            this.textBox5.Location = new System.Drawing.Point(17, 365);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(98, 20);
-            this.textBox5.TabIndex = 14;
+            this.txtNum_doc.Location = new System.Drawing.Point(17, 365);
+            this.txtNum_doc.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtNum_doc.Name = "txtNum_doc";
+            this.txtNum_doc.Size = new System.Drawing.Size(98, 20);
+            this.txtNum_doc.TabIndex = 14;
             // 
-            // checkBox1
+            // chkEstado
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(82, 395);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 15;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkEstado.AutoSize = true;
+            this.chkEstado.Location = new System.Drawing.Point(82, 395);
+            this.chkEstado.Name = "chkEstado";
+            this.chkEstado.Size = new System.Drawing.Size(15, 14);
+            this.chkEstado.TabIndex = 15;
+            this.chkEstado.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.Location = new System.Drawing.Point(15, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 16);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "NOMBRE";
             // 
             // Frm_Estudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(504, 433);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.chkEstado);
+            this.Controls.Add(this.txtNum_doc);
+            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtNombres);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnActualizar);
+            this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtBuscar);
+            this.Controls.Add(this.dataEstudiantes);
+            this.Controls.Add(this.btnListar);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Frm_Estudiantes";
             this.Text = "MANTENIMEINTO DE ESTUDIANTES";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataEstudiantes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,21 +249,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnListar;
+        private System.Windows.Forms.DataGridView dataEstudiantes;
+        private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox txtNombres;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtNum_doc;
+        private System.Windows.Forms.CheckBox chkEstado;
+        private System.Windows.Forms.Label label1;
     }
 }
