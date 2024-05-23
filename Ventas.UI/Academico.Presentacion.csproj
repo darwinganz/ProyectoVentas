@@ -60,6 +60,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dbFisUplaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbFisUplaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Estudiantes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +95,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="dbFisUplaDataSet.xsc">
+      <DependentUpon>dbFisUplaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbFisUplaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbFisUplaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbFisUplaDataSet.xss">
+      <DependentUpon>dbFisUplaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

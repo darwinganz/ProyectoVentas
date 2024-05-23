@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnListar = new System.Windows.Forms.Button();
             this.dataEstudiantes = new System.Windows.Forms.DataGridView();
             this.txtBuscar = new System.Windows.Forms.TextBox();
@@ -44,7 +45,11 @@
             this.txtNum_doc = new System.Windows.Forms.TextBox();
             this.chkEstado = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dbFisUplaDataSet = new Ventas.UI.dbFisUplaDataSet();
+            this.dbFisUplaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataEstudiantes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbFisUplaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbFisUplaDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnListar
@@ -61,7 +66,9 @@
             // 
             // dataEstudiantes
             // 
+            this.dataEstudiantes.AutoGenerateColumns = false;
             this.dataEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataEstudiantes.DataSource = this.dbFisUplaDataSetBindingSource;
             this.dataEstudiantes.Location = new System.Drawing.Point(17, 59);
             this.dataEstudiantes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataEstudiantes.Name = "dataEstudiantes";
@@ -215,6 +222,16 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "NOMBRE";
             // 
+            // dbFisUplaDataSet
+            // 
+            this.dbFisUplaDataSet.DataSetName = "dbFisUplaDataSet";
+            this.dbFisUplaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dbFisUplaDataSetBindingSource
+            // 
+            this.dbFisUplaDataSetBindingSource.DataSource = this.dbFisUplaDataSet;
+            this.dbFisUplaDataSetBindingSource.Position = 0;
+            // 
             // Frm_Estudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -242,6 +259,8 @@
             this.Name = "Frm_Estudiantes";
             this.Text = "MANTENIMEINTO DE ESTUDIANTES";
             ((System.ComponentModel.ISupportInitialize)(this.dataEstudiantes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbFisUplaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbFisUplaDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,5 +284,7 @@
         private System.Windows.Forms.TextBox txtNum_doc;
         private System.Windows.Forms.CheckBox chkEstado;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.BindingSource dbFisUplaDataSetBindingSource;
+        private Ventas.UI.dbFisUplaDataSet dbFisUplaDataSet;
     }
 }

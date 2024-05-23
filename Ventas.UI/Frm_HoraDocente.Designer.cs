@@ -35,6 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtNum_doc = new System.Windows.Forms.TextBox();
             this.hora_entrada = new System.Windows.Forms.Timer(this.components);
+            this.lblFecha = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRegistrar
@@ -90,11 +91,22 @@
             this.hora_entrada.Enabled = true;
             this.hora_entrada.Tick += new System.EventHandler(this.hora_entrada_Tick);
             // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.Location = new System.Drawing.Point(41, 216);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(61, 24);
+            this.lblFecha.TabIndex = 5;
+            this.lblFecha.Text = "fecha";
+            // 
             // Frm_HoraDocente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 231);
+            this.ClientSize = new System.Drawing.Size(569, 263);
+            this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.txtNum_doc);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblHora);
@@ -115,5 +127,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNum_doc;
         private System.Windows.Forms.Timer hora_entrada;
+        private System.Windows.Forms.Label lblFecha;
     }
 }
